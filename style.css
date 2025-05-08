@@ -35,6 +35,15 @@ nav ul li a:hover {
   text-decoration: underline;
 }
 
+a {
+  color: #66fcf1;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 main {
   padding-top: 80px;
 }
@@ -43,13 +52,19 @@ section {
   padding: 60px 20px;
   max-width: 900px;
   margin: 0 auto;
+  text-align: center;
 }
 
 h1 {
   font-size: 2.5em;
   margin-bottom: 0.3em;
   color: #66fcf1;
-  text-align: center;
+}
+
+.subtitulo {
+  font-size: 1.3em;
+  color: #e0e0e0;
+  margin-top: -10px;
 }
 
 h2 {
