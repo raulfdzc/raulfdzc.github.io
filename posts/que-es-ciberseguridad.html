@@ -14,10 +14,34 @@
       padding: 0;
     }
 
+    nav {
+      background-color: #0d1b2a;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      padding: 1rem;
+      z-index: 1000;
+      border-bottom: 2px solid #00bcd4;
+    }
+
+    nav a {
+      color: #00bcd4;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #00e5ff;
+    }
+
     header {
       background-color: #0d1b2a;
       color: #00bcd4;
-      padding: 2rem;
+      padding: 5rem 2rem 2rem;
       text-align: center;
       border-bottom: 2px solid #00bcd4;
     }
@@ -29,6 +53,7 @@
       background: #1e1e1e;
       border-radius: 8px;
       box-shadow: 0 0 10px rgba(0,188,212,0.2);
+      margin-top: 2rem;
     }
 
     h1 {
@@ -64,9 +89,34 @@
       border-top: 2px solid #00bcd4;
       margin-top: 3rem;
     }
+
+    /* Para compensar el espacio ocupado por el menú fijo */
+    body::before {
+      content: "";
+      display: block;
+      height: 60px;
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        flex-wrap: wrap;
+        gap: 1rem;
+      }
+    }
   </style>
 </head>
 <body>
+
+  <nav>
+    <a href="../index.html">Home</a>
+    <a href="../about.html">About</a>
+    <a href="../skills.html">Skills</a>
+    <a href="../certifications.html">Certifications</a>
+    <a href="../projects.html">Projects</a>
+    <a href="../cv.html">CV</a>
+    <a href="../contact.html">Contact</a>
+    <a href="../index.html">Blog</a>
+  </nav>
 
   <header>
     <h1>¿Qué es la ciberseguridad y por qué es importante?</h1>
@@ -100,7 +150,7 @@
   </main>
 
   <footer>
-    <p>&copy; 2025 Raúl Fernández</p>
+    <p>&copy; 2025 Raúl Fernández </p>
   </footer>
 
 </body>
