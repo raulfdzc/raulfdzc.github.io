@@ -1,42 +1,93 @@
+<!-- Archivo: index.html -->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Blog – Raúl Fernández</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog de Ciberseguridad - Raúl Fernández</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    header {
+      background-color: #0b6ca4;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 1rem 2rem;
+      background: white;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 8px;
+    }
+
+    h2 {
+      color: #007acc;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 0.3rem;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    li {
+      margin: 1rem 0;
+    }
+
+    a {
+      text-decoration: none;
+      color: #0b6ca4;
+      font-weight: bold;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #777;
+    }
+  </style>
 </head>
 <body>
+
   <header>
-    <nav>
-      <ul>
-        <li><a href="index.html">← Back to Portfolio</a></li>
-      </ul>
-    </nav>
+    <h1>Blog de Ciberseguridad</h1>
+    <p>Por Raúl Fernández</p>
   </header>
+
   <main>
-    <section class="blog">
-      <h1>Blog<span class="cursor">_</span></h1>
-
-      <article class="post">
-        <h2>¿Qué es la ciberseguridad?</h2>
-        <p class="post-meta">Published on May 12, 2025</p>
-        <p>Vivimos en un mundo digital. Cada día, realizamos actividades en línea como enviar mensajes, hacer compras, trabajar de forma remota o compartir momentos personales. Pero, ¿alguna vez te has preguntado qué tan seguros están tus datos mientras haces todo esto?</p>
-        <a href="posts/que-es-la-ciberseguridad.html" class="read-more">Leer más →</a>
-      </article>
-
-      <!--<article class="post">
-        <h2>Top 5 Web App Vulnerabilities I Found This Year</h2>
-        <p class="post-meta">Published on April 12, 2025</p>
-        <p>From IDORs to broken authentication flows, these findings illustrate how subtle flaws can lead to major breaches. I share real-world cases (anonymized) and how we resolved them effectively.</p>
-        <a href="#" class="read-more">Read more →</a>
-      </article>
--->
-    </section>
+    <h2>Artículos recientes</h2>
+    <ul>
+      <li><a href="posts/que-es-la-ciberseguridad.html">¿Qué es la ciberseguridad y por qué es importante?</a></li>
+      <!-- Aquí puedes ir agregando más artículos conforme los vayas creando -->
+      <!-- Ejemplo:
+      <li><a href="posts/como-crear-contrasenas-seguras.html">Cómo crear contraseñas seguras</a></li>
+      -->
+    </ul>
   </main>
+
   <footer>
-    <p>&copy; 2025 Raúl Fernández</p>
+    <p>&copy; 2025 Raúl Fernández - Blog de Ciberseguridad</p>
   </footer>
+
 </body>
 </html>
