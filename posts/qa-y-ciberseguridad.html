@@ -1,0 +1,155 @@
+<!-- Archivo: posts/qa-y-ciberseguridad.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>La conexión entre QA y Ciberseguridad</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #121212;
+      color: #e0e0e0;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav {
+      background-color: #0d1b2a;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      padding: 1rem;
+      z-index: 1000;
+      border-bottom: 2px solid #00bcd4;
+    }
+
+    nav a {
+      color: #00bcd4;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #00e5ff;
+    }
+
+    header {
+      background-color: #0d1b2a;
+      color: #00bcd4;
+      padding: 5rem 2rem 2rem;
+      text-align: center;
+      border-bottom: 2px solid #00bcd4;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background: #1e1e1e;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,188,212,0.2);
+      margin-top: 2rem;
+    }
+
+    h1 {
+      color: #00bcd4;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    h2 {
+      color: #00bcd4;
+      margin-top: 2rem;
+    }
+
+    p {
+      line-height: 1.6;
+      margin: 1rem 0;
+    }
+
+    ul {
+      margin: 1rem 0 1rem 1.5rem;
+    }
+
+    li {
+      margin-bottom: 0.5rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #999;
+      background-color: #0d1b2a;
+      border-top: 2px solid #00bcd4;
+      margin-top: 3rem;
+    }
+
+    body::before {
+      content: "";
+      display: block;
+      height: 60px;
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        flex-wrap: wrap;
+        gap: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="../index.html">Home</a>
+    <a href="../about.html">About</a>
+    <a href="../skills.html">Skills</a>
+    <a href="../certifications.html">Certifications</a>
+    <a href="../projects.html">Projects</a>
+    <a href="../cv.html">CV</a>
+    <a href="../contact.html">Contact</a>
+    <a href="../index.html">Blog</a>
+  </nav>
+
+  <header>
+    <h1>La conexión entre QA y Ciberseguridad</h1>
+    <p>Por Raúl Fernández</p>
+  </header>
+
+  <main>
+    <p>Cuando hablamos de ciberseguridad, solemos pensar en firewalls, antivirus o hackers éticos. Pero hay un aliado silencioso y muy poderoso en esta área: el aseguramiento de calidad (QA).</p>
+
+    <h2>¿Qué es QA?</h2>
+    <p>El aseguramiento de calidad es un proceso clave en el desarrollo de software que busca garantizar que una aplicación funcione correctamente, cumpla con los requisitos y no tenga errores que afecten al usuario final.</p>
+
+    <h2>¿Cómo se relaciona con la ciberseguridad?</h2>
+    <p>QA no solo se enfoca en que una aplicación funcione, sino en cómo se comporta ante situaciones inesperadas. Aquí es donde se cruza con la ciberseguridad:</p>
+    <ul>
+      <li><strong>Prevención de vulnerabilidades:</strong> pruebas bien diseñadas pueden descubrir errores que pueden convertirse en brechas de seguridad.</li>
+      <li><strong>Validación de controles:</strong> QA ayuda a comprobar que los mecanismos de seguridad (como la autenticación o autorización) funcionan correctamente.</li>
+      <li><strong>Defensa en el ciclo de vida del software:</strong> al incluir pruebas desde etapas tempranas, se reducen los riesgos antes de que el sistema llegue al usuario.</li>
+    </ul>
+
+    <h2>Buenas prácticas para unir QA y ciberseguridad</h2>
+    <ul>
+      <li>Incluir pruebas de seguridad dentro de los planes de testing funcional.</li>
+      <li>Simular ataques comunes como inyecciones o accesos no autorizados.</li>
+      <li>Trabajar en conjunto con el equipo de desarrollo y seguridad desde el inicio.</li>
+      <li>Automatizar pruebas de seguridad dentro del flujo CI/CD.</li>
+    </ul>
+
+    <p>QA no es solo un proceso para "encontrar bugs", es una parte vital de una estrategia de ciberseguridad eficaz. Involucrar al equipo de calidad en la protección de aplicaciones fortalece toda la postura de seguridad de una organización.</p>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Raúl Fernández</p>
+  </footer>
+
+</body>
+</html>
